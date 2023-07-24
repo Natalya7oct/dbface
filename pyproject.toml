@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "dbface_package"
+version = "0.1.0"
+description = ""
+authors = ["train <natalya7oct@gmail.com@example.com>"]
+readme = "README.md"
+packages = [{include = "dbface_package"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.24.1"
+opencv-python = "^4.8.0.74"
+openvino = {version = "2023.0.1", python = "^3.9"}
+# torch = {version = "^2.0.1", python = "^3.9"}
+# torch = { url = "https://download.pytorch.org/whl/cpu/torch-1.10.0%2Bcpu-cp39-cp39-linux_x86_64.whl" }
+torch = { url = "https://download.pytorch.org/whl/cpu/torch-2.0.1%2Bcpu-cp39-cp39-linux_x86_64.whl" }
+argparse = "^1.4.0"
+python-math = "^0.0.1"
+random2 = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
