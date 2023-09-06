@@ -1,0 +1,13 @@
+sudo docker system prune
+
+sudo docker build -t dbface_app .
+sudo service docker stop
+sudo docker run -p 8501:8501 dbface_app
+sudo docker save -o /home/green/dbface_app/dbface_app.tar dbface_app
+
+sudo docker image load -i '/home/green/dbface_app/dbface_app.tar' 
+sudo service docker stop
+sudo docker run -p 8501:8501 dbface_app
+
+
+

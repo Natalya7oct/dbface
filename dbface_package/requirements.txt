@@ -1,0 +1,7 @@
+random2
+opencv-python-headless
+numpy
+torch
+torch
+openvino
+streamlit
